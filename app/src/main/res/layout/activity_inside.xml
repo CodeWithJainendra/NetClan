@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.shivamsingh.Activities.MerchantActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addproduct_bg"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgproduct"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="145dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/accountt"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/signuptxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgproduct"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/add_product"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signuptxt"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/add_product_des"
+                android:textColor="@color/white" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="100dp"
+                android:foregroundGravity="center"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/totalPriceTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Price: $0.00"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/productNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="@string/username"
+                        android:background="@drawable/edittext_background"
+                        android:hint="@string/product_name"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#5E5D5D"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/productDescriptionEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:autofillHints="@string/email"
+                        android:background="@drawable/edittext_background"
+                        android:hint="@string/product_des"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#5E5D5D"
+                        android:textSize="15sp" />
+
+                    <Spinner
+                        android:id="@+id/productTypeSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/penaltyAmountEditText"
+                        android:layout_marginTop="10dp"
+                     android:hint="Select Product Type"
+                        android:background="@drawable/edittext_background"
+                        android:backgroundTint="@color/black"
+                      android:padding="10dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15sp"
+                    android:spinnerMode="dialog"
+                    android:drawableEnd="@drawable/ic_down" />
+
+
+                    <RadioGroup
+                        android:id="@+id/shiftRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <RadioButton
+                            android:id="@+id/morningRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Morning Shift"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/eveningRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Evening Shift"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/nightRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Night Shift"
+                            android:textColor="@color/black" />
+                    </RadioGroup>
+
+
+
+                    <TextView
+                        android:id="@+id/priceEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:hint="@string/product_price"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#5E5D5D"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/black"
+                        android:background="@drawable/edittext_background"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <CheckBox
+                            android:id="@+id/penaltyCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Penalty" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/penaltyAmountEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:autofillHints="@string/con_password"
+                        android:background="@drawable/edittext_background"
+                        android:hint="@string/product_discount_price"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#5E5D5D"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/txtdiscountDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:autofillHints="@string/con_password"
+                        android:background="@drawable/edittext_background"
+                        android:hint="@string/product_discount_des"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:text="@string/product_dis_desc"
+                        android:textColor="@color/black"
+                        android:textColorHint="#5E5D5D"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+
+                    <Button
+                        android:id="@+id/submitButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:shadowColor="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/product_btn"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

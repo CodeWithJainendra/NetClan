@@ -1,0 +1,30 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+            <string-array name="product_types">
+                <item>Beverages</item>
+                <item>Bakery</item>
+                <item>Chilled</item>
+                <item>Meats</item>
+                <item>Grocery</item>
+                <item>HomeWare</item>
+                <item>Medicine</item>
+                <item>PetCare</item>
+                <item>Vegetables</item>
+                <item>Fruits</item>
+                <item>Crafts &amp; Arts</item>
+                <item>Clothes</item>
+                <item>Foods</item>
+                <item>Others</item>
+            </string-array>
+
+</resources>

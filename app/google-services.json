@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "167564372818",
+    "project_id": "venom-a0e0a",
+    "storage_bucket": "venom-a0e0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167564372818:android:cbf1a9acdf9908ca38288b",
+        "android_client_info": {
+          "package_name": "com.example.ghostvenom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167564372818-8uh1hobnhglm0312cu1bnib88p3ojgbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACBElfjIthuvNerv4CTYvGIT2EPW18Gyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167564372818-8uh1hobnhglm0312cu1bnib88p3ojgbt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167564372818:android:02abfc9548a1bb6d38288b",
+        "android_client_info": {
+          "package_name": "com.shivamsingh.instadownload.story.downloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167564372818-8uh1hobnhglm0312cu1bnib88p3ojgbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACBElfjIthuvNerv4CTYvGIT2EPW18Gyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167564372818-8uh1hobnhglm0312cu1bnib88p3ojgbt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167564372818:android:f3a774f7f8eb391438288b",
+        "android_client_info": {
+          "package_name": "com.shivamsingh.netclan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167564372818-8uh1hobnhglm0312cu1bnib88p3ojgbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACBElfjIthuvNerv4CTYvGIT2EPW18Gyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167564372818-8uh1hobnhglm0312cu1bnib88p3ojgbt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
